@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-content">
+        <div class="todo-block">
+            <div class="todo-block__header">
+                <div class="todo-block__name-day"></div>
+                <div class="todo-block__date"></div>
+            </div>
+            <ul id="todo-items">
+
+            </ul>
+        
+            <form method="" id="todo-form">
+                <textarea type="text" placeholder="Задание" id="task-input"></textarea>
+                <button type="submit" id="todo-btn">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal-edit">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Редактировать задание</div>
+                    <button type="button" class="btn-close">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea class="modal-edit__text"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-footer__btn btn-save">Сохранить</button>
+                    <button type="button" class="modal-footer__btn btn-close">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
